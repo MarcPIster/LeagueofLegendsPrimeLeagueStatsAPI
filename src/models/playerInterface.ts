@@ -4,6 +4,17 @@ export interface IPlayer {
    status : string;
    inGameName : string;
    elo?: string; // optional
+   puuId?: string; // optional
+   summonerLevel?: number; // optional
    position?: string; // optional
+}
 
+export interface IPlayerRiotByName {
+    id: string;
+    accountId: string;
+    puuid: string;
+    name: string;
+    profileIconId: number;
+    revisionDate: number;
+    summonerLevel: number;
 }

@@ -1,0 +1,4 @@
+#sample env file
+#please replace this with your own values and change the name to .env
+DEVELOPMENT_KEY=ABC123
+REGION=euw1.api.riotgames.com
