@@ -7,6 +7,7 @@ export interface IPlayer {
    puuId?: string; // optional
    summonerLevel?: number; // optional
    position?: string; // optional
+    games?: [string]; // optional
 }
 
 export interface IPlayerRiotByName {

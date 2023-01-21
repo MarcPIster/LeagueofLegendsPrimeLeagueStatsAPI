@@ -24,3 +24,10 @@ export async function fillPlayerData(team: ITeam) {
     }
     return team;
 }
+
+export async function getNormalMatchesByPuuid(puuid: string) {
+    const url = 'https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/' + puuid +
+        '/ids?type=normal&start=0&count=20&api_key=' + process.env.DEVELOPMENT_KEY;
+    const matches = await axios.get(url);
+    return matches.data;
+}
