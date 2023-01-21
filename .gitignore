@@ -1,0 +1,7 @@
+# Project exclude paths
+*.js
+bianva
+node_modules/
+.idea/
+package-lock.json
+.env
