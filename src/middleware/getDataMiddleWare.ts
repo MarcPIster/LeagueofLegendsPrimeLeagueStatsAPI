@@ -1,5 +1,4 @@
 
-
 export function checkIfUrlExists(body : any) {
     for (let key in body) {
         if (key === 'url') {
@@ -8,4 +7,12 @@ export function checkIfUrlExists(body : any) {
         }
     }
     return false;
+}
+
+export function checkIfPlayerNameExists(body : any) {
+    console.log(body);
+    if (body.name === undefined) {
+        return false;
+    }
+    return !!body.name;
 }
